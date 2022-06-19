@@ -1,4 +1,4 @@
-{"OrderNo": 56686120, "CustomerId": "C2193", "Ticker": "TSLA", "OrderTime": "2022-06-08 04:54:23", "BuySell": "Sell", "Volume": 96.00000000000001}
-{"OrderNo": 77117955, "CustomerId": "C2193", "Ticker": "AAPL", "OrderTime": "2022-06-08 04:54:23", "BuySell": "Buy", "Volume": 43.99999999999998}
-{"OrderNo": 76228016, "CustomerId": "C2193", "Ticker": "GOOG", "OrderTime": "2022-06-08 04:54:23", "BuySell": "Buy", "Volume": 127.0}
-{"OrderNo": 38255580, "CustomerId": "C2193", "Ticker": "NVDA", "OrderTime": "2022-06-08 04:54:23", "BuySell": "Buy", "Volume": 164.0}
+{"OrderNo": 46617043, "CustomerId": "C2193", "Ticker": "TSLA", "OrderTime": "2022-06-19 22:54:05", "BuySell": "Sell", "Volume": 146.00000000000003}
+{"OrderNo": 35760645, "CustomerId": "C2193", "Ticker": "AAPL", "OrderTime": "2022-06-19 22:54:05", "BuySell": "Buy", "Volume": 93.99999999999999}
+{"OrderNo": 49160002, "CustomerId": "C2193", "Ticker": "GOOG", "OrderTime": "2022-06-19 22:54:05", "BuySell": "Sell", "Volume": 123.0}
+{"OrderNo": 70323963, "CustomerId": "C2193", "Ticker": "NVDA", "OrderTime": "2022-06-19 22:54:05", "BuySell": "Sell", "Volume": 86.0}
