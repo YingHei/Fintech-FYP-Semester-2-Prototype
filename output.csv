@@ -1,0 +1,2 @@
+OrderNo,CustomerId,Ticker,OrderTime,BuySell,Quantity
+80600404,C2193,TSLA,2022-06-07 23:59:03,Sell,0.0001

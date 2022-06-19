@@ -1,0 +1,58 @@
+[
+  {
+    "OrderNo": "007222",
+    "CustomerId": "C2048",
+    "Ticker": "TSLA",
+    "OrderTime": "2022-03-29 20:06:26",
+    "BuySell": "buy",
+    "Quantity": 0.11
+  },
+  {
+    "OrderNo": "000060",
+    "CustomerId": "C2048",
+    "Ticker": "BRK.A",
+    "OrderTime": "2022-03-29 20:07:28",
+    "BuySell": "buy",
+    "Quantity": 0.11
+  },
+  {
+    "OrderNo": "007734",
+    "CustomerId": "C2048",
+    "Ticker": "AAPL",
+    "OrderTime": "2022-03-29 20:07:33",
+    "BuySell": "buy",
+    "Quantity": 4
+  },
+  {
+    "OrderNo": "007299",
+    "CustomerId": "C2048",
+    "Ticker": "AAPL",
+    "OrderTime": "2022-03-29 20:07:42",
+    "BuySell": "sell",
+    "Quantity": 0.2
+  },
+  {
+    "OrderNo": "004399",
+    "CustomerId": "C2048",
+    "Ticker": "F",
+    "OrderTime": "2022-03-29 20:08:14",
+    "BuySell": "buy",
+    "Quantity": 10.2
+  },
+  {
+    "OrderNo": "003942",
+    "CustomerId": "C2048",
+    "Ticker": "TSLA",
+    "OrderTime": "2022-03-29 20:08:29",
+    "BuySell": "sell",
+    "Quantity": 0.03
+  },
+  {
+    "OrderNo": "000838",
+    "CustomerId": "C2048",
+    "Ticker": "F",
+    "OrderTime": "2022-03-29 20:08:36",
+    "BuySell": "sell",
+    "Quantity": 3.5
+  }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "Execution Time":"2022-04-13 16:00:50",
+        "Symbol":"F",
+        "Action":"Buy",
+        "Price":15.36,
+        "Quantity":19.0,
+        "Volume":291.84,
+        "Type":"ETF"
+    },
+    {
+        "Execution Time":"2022-04-12 17:09:20",
+        "Symbol":"TSLA",
+        "Action":"Buy",
+        "Price":975.93,
+        "Quantity":0.055054902,
+        "Volume":53.7297304812,
+        "Type":"ETF"
+    },
+    {
+        "Execution Time":"2022-04-12 17:09:04",
+        "Symbol":"TSLA",
+        "Action":"Buy",
+        "Price":975.93,
+        "Quantity":1.9899900178,
+        "Volume":1942.0909580943,
+        "Type":"Normal"
+    },
+    {
+        "Execution Time":"2022-04-12 16:47:02",
+        "Symbol":"TSLA",
+        "Action":"Buy",
+        "Price":975.93,
+        "Quantity":0.624879073,
+        "Volume":609.8382337134,
+        "Type":"ETF"
+    },
+    {
+        "Execution Time":"2022-04-12 16:35:42",
+        "Symbol":"F",
+        "Action":"Buy",
+        "Price":15.28,
+        "Quantity":65.3846153846,
+        "Volume":999.0769230769,
+        "Type":"ETF"
+    },
+    {
+        "Execution Time":"2022-04-12 16:31:40",
+        "Symbol":"AAPL",
+        "Action":"Sell",
+        "Price":165.75,
+        "Quantity":1.2320574163,
+        "Volume":204.2135167464,
+        "Type":"ETF"
+    },
+    {
+        "Execution Time":"2022-04-12 16:31:40",
+        "Symbol":"AAPL",
+        "Action":"Sell",
+        "Price":165.75,
+        "Quantity":1.2320574163,
+        "Volume":204.2135167464,
+        "Type":"ETF"
+    },
+    {
+        "Execution Time":"2022-04-12 16:31:40",
+        "Symbol":"AAPL",
+        "Action":"Sell",
+        "Price":165.75,
+        "Quantity":1.2320574163,
+        "Volume":204.2135167464,
+        "Type":"ETF"
+    },
+    {
+        "Execution Time":"2022-04-12 16:31:40",
+        "Symbol":"AAPL",
+        "Action":"Sell",
+        "Price":165.75,
+        "Quantity":0.6339712919,
+        "Volume":105.0807416268,
+        "Type":"ETF"
+    },
+    {
+        "Execution Time":"2022-04-12 16:31:40",
+        "Symbol":"AAPL",
+        "Action":"Sell",
+        "Price":165.75,
+        "Quantity":0.6339712919,
+        "Volume":105.0807416268,
+        "Type":"ETF"
+    }
+]

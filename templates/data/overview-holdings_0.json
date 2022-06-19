@@ -1,0 +1,37 @@
+[
+  {
+    "Symbol": "TLSA",
+    "Current Price": 1081.92,
+    "Average Price": 900,
+    "P&L": "20.21%",
+    "Qty": 0.5
+  },
+  {
+    "Symbol": "APPL",
+    "Current Price": 161.01,
+    "Average Price": 154.5,
+    "P&L": "4.22%",
+    "Qty": 2.14
+  },
+  {
+    "Symbol": "NVDA",
+    "Current Price": 47.09,
+    "Average Price": 33.4,
+    "P&L": "40.98%",
+    "Qty": 2.93
+  },
+  {
+    "Symbol": "MSFT",
+    "Current Price": 329.68,
+    "Average Price": 317.95,
+    "P&L": "3.82%",
+    "Qty": 1.5
+  },
+  {
+    "Symbol": "TLSA",
+    "Current Price": 1081.92,
+    "Average Price": 900,
+    "P&L": "20.21%",
+    "Qty": 0.5
+  }
+]

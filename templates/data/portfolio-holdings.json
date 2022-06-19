@@ -1,0 +1,46 @@
+[
+  {
+    "Symbol": "TSLA",
+    "Market Value": 701.136,
+    "Quantity": 0.8,
+    "Market Price": 876.42,
+    "Cost": 776,
+    "Today's P/L": "-12.18%",
+    "P/L": "12.94%",
+    "% Portfolio": "38.62%",
+    "% TA": "15.53%"
+  },
+  {
+    "Symbol": "AAPL",
+    "Market Value": 392,
+    "Quantity": 2.5,
+    "Market Price": 156.8,
+    "Cost": 145,
+    "Today's P/L": "-3.73%",
+    "P/L": "8.14%",
+    "% Portfolio": "21.59%",
+    "% TA": "8.69%"
+  },
+  {
+    "Symbol": "GOOG",
+    "Market Value": 478.024,
+    "Quantity": 0.2,
+    "Market Price": 2390.12,
+    "Cost": 2600,
+    "Today's P/L": "-3.04%",
+    "P/L": "-8.07%",
+    "% Portfolio": "26.33%",
+    "% TA": "10.59%"
+  },
+  {
+    "Symbol": "NVDA",
+    "Market Value": 244.244,
+    "Quantity": 1.3,
+    "Market Price": 187.88,
+    "Cost": 230,
+    "Today's P/L": "-5.60%",
+    "P/L": "-18.31%",
+    "% Portfolio": "13.45%",
+    "% TA": "5.41%"
+  }
+]

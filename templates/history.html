@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Prototype | Trading History</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../static/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../static/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../../static/images/favicon.png" />
+    <!--  jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Danfo for DataFrame -->
+    <script src="https://cdn.jsdelivr.net/npm/danfojs@1.0.4/lib/bundle.js"></script>
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+        </div>
+        <ul class="nav">
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="../../static/images/faces/face15.jpg" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
+                  <span>Gold Member</span>
+                </div>
+              </div>
+              <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-settings text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-onepassword  text-info"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item nav-category">
+            <span class="nav-link">Navigation</span>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="/index.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Overview</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="/trading.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-chart-line"></i>
+              </span>
+              <span class="menu-title">Trading</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="mdi mdi-chart-arc"></i>
+              </span>
+              <span class="menu-title">Homemade ETF</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="/portfolio-view.html">View</a></li>
+                <li class="nav-item"> <a class="nav-link" href="/portfolio-transfer.html">Manage</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="/history.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-file-document-box"></i>
+              </span>
+              <span class="menu-title">Trading History</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="/news.html">
+              <span class="menu-icon">
+                <i class="mdi mdi-newspaper"></i>
+              </span>
+              <span class="menu-title">News</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="https://www.hsbc.com.hk/zh-hk/investments/products/stocks/trade25/" target="_blank" rel="noopener noreferrer">
+              <span class="menu-icon">
+                <i class="mdi mdi-school"></i>
+              </span>
+              <span class="menu-title">Trade25 Academy</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="static/images/logo-mini.png" alt="logo" /></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+            <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                  <input type="text" class="form-control" placeholder="Search stocks">
+                </form>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-nav-right">
+              <li class="nav-item nav-settings d-none d-lg-block">
+                <a class="nav-link" href="#">
+                  <i class="mdi mdi-view-grid"></i>
+                </a>
+              </li>
+
+              <li class="nav-item dropdown border-left">
+                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <i class="mdi mdi-bell"></i>
+                  <span class="count bg-danger"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <h6 class="p-3 mb-0">Notifications</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-currency-usd text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">TSLA</p>
+                      <p class="text-muted ellipsis mb-0"> reaches $890.56 </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-currency-usd text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">AAPL</p>
+                      <p class="text-muted ellipsis mb-0"> paid dividend $0.88 </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-file-chart text-warning"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">GOOG</p>
+                      <p class="text-muted ellipsis mb-0"> announces annual report tomorrow </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">See all notifications</p>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <img class="img-xs rounded-circle" src="../../static/images/faces/face15.jpg" alt="">
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                  <h6 class="p-3 mb-0">Profile</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-settings text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Log out</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <p class="p-3 mb-0 text-center">Advanced settings</p>
+                </div>
+              </li>
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title"> Trading History </h3>
+            </div>
+            <div class="row my-4 mx-3">
+              <form action="/filter-transaction-record" method="POST">
+                <div class="form-row align-items-end">
+                    <div class="col-auto my-1">
+                        <label class="mr-sm-2" for="date-start" style="color:#6c7293;">From</label>
+                        <input class="form-control" type="date" id="date-start" name="date-start">
+                    </div>
+                    <div class="col-auto my-1">
+                        <label class="mr-sm-2" for="date-end" style="color:#6c7293;">to</label>
+                        <input class="form-control" type="date" id="date-end" name="date-end">
+                    </div>
+                    <div class="col-auto my-1 mx-2">
+                        <label class="mr-sm-2" for="BuySell" style="color:#6c7293;">Buy / Sell</label>
+                        <select class="custom-select form-control mr-sm-2" id="buysell" name="buysell" style="color:white">
+                        <option value="All">All</option>
+                        <option value="Buy">Buy</option>
+                        <option value="Sell">Sell</option>
+                        </select>
+                    </div>
+                    <div class="col-auto my-1">
+                        <label class="mr-sm-2" for="Type" style="color:#6c7293;">Type</label>
+                        <select class="custom-select form-control mr-sm-2" id="type" name="type" style="color:white">
+                        <option value="All">All</option>
+                        <option value="Normal">Normal</option>
+                        <option value="ETF">ETF</option>
+                        </select>
+                    </div>
+                    <div class="col-1 my-2 mx-3">
+                        <button type="submit" class="btn btn-inverse-primary btn-submit" id="btnSubmit" onclick="parse()">Filter</button>
+                    </div>
+                </div>
+              </form>
+            </div>
+            <div class="row">
+              <!-- history table -->
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-striped" id="history-table">
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end history table -->
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../static/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../static/js/off-canvas.js"></script>
+    <script src="../../static/js/hoverable-collapse.js"></script>
+    <script src="../../static/js/misc.js"></script>
+    <script src="../../static/js/settings.js"></script>
+    <script src="../../static/js/todolist.js"></script>
+    <script>
+
+      var list = [];
+
+      $(document).ready(() => {
+        parse();
+      });
+
+      function parse() {
+        fetch("./data/transaction-record.json", {method: "GET"})
+        .then(res => {
+            return res.text();
+        }).then(result => {
+            list = JSON.parse(result);
+            console.log(list);
+            constructTable('#history-table');
+        })
+      }
+
+      function constructTable(selector) {
+
+        // Getting the all column names
+        var cols = Headers(list, selector);
+
+        // Traversing the JSON data
+        $(selector).append('<tbody>');
+
+        for (var i = 0; i < list.length+1; i++) {
+          var row = $('<tr/>');
+          for (var colIndex = 0; colIndex < cols.length; colIndex++)
+          {
+            var val = list[i][cols[colIndex]];
+
+            // If there is any key, which is matching with the column name
+            if (val == null) val = "";
+              row.append($('<td/>').html(val));
+              // row.append($('<td/>').html("<input type='hidden' name='bookid' value="+val+">"+val));
+          }
+          // Adding each row to the table
+          $(selector).append(row);
+        }
+        $(selector).append('</tbody>');
+      }
+
+      function Headers(list, selector) {
+        var columns = [];
+        var header = $('<tr/>');
+
+        for (var i = 0; i < list.length; i++) {
+          var row = list[i];
+
+          for (var k in row) {
+            if ($.inArray(k, columns) == -1) {
+              columns.push(k);
+
+              // Creating the header
+              header.append($('<th/>').html(k));
+            }
+          }
+        }
+        // Appending the header to the table
+        $(selector).append(header);
+          return columns;
+      }
+
+    </script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+  </body>
+</html>

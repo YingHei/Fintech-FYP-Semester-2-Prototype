@@ -1,0 +1,4 @@
+{"OrderNo": 56686120, "CustomerId": "C2193", "Ticker": "TSLA", "OrderTime": "2022-06-08 04:54:23", "BuySell": "Sell", "Volume": 96.00000000000001}
+{"OrderNo": 77117955, "CustomerId": "C2193", "Ticker": "AAPL", "OrderTime": "2022-06-08 04:54:23", "BuySell": "Buy", "Volume": 43.99999999999998}
+{"OrderNo": 76228016, "CustomerId": "C2193", "Ticker": "GOOG", "OrderTime": "2022-06-08 04:54:23", "BuySell": "Buy", "Volume": 127.0}
+{"OrderNo": 38255580, "CustomerId": "C2193", "Ticker": "NVDA", "OrderTime": "2022-06-08 04:54:23", "BuySell": "Buy", "Volume": 164.0}

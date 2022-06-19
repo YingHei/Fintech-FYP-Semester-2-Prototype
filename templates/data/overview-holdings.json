@@ -1,0 +1,52 @@
+[
+  {
+    "Symbol": "TSLA",
+    "Market Value": 2191.05,
+    "Qty": 2.5,
+    "Market Price": 876.42,
+    "Cost": 776,
+    "Today P&L": "-12.18%",
+    "P&L": "12.94%",
+    "% TA": "48.55%"
+  },
+  {
+    "Symbol": "AAPL",
+    "Market Value": 492.352,
+    "Qty": 3.14,
+    "Market Price": 156.8,
+    "Cost": 145,
+    "Today P&L": "-3.73%",
+    "P&L": "8.14%",
+    "% TA": "10.91%"
+  },
+  {
+    "Symbol": "GOOG",
+    "Market Value": 478.024,
+    "Qty": 0.2,
+    "Market Price": 2390.12,
+    "Cost": 2600,
+    "Today P&L": "-3.04%",
+    "P&L": "-8.07%",
+    "% TA": "10.59%"
+  },
+  {
+    "Symbol": "MSFT",
+    "Market Value": 675.55,
+    "Qty": 2.5,
+    "Market Price": 270.22,
+    "Cost": 317.95,
+    "Today P&L": "-3.74%",
+    "P&L": "-15.01%",
+    "% TA": "14.97%"
+  },
+  {
+    "Symbol": "NVDA",
+    "Market Value": 676.368,
+    "Qty": 3.6,
+    "Market Price": 187.88,
+    "Cost": 230,
+    "Today P&L": "-5.60%",
+    "P&L": "-18.31%",
+    "% TA": "14.99%"
+  }
+]
