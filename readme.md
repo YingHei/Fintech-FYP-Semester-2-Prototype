@@ -1,5 +1,5 @@
 # FTEC4888/4999 Group C – Fractional Stock Investment
-### CHAN Siu Fung, LAU Lok Hei, WONG Ying Hei
+##### CHAN Siu Fung, LAU Lok Hei, WONG Ying Hei
 ## Installation Procedures
 1. Install Anaconda with the attached exe file (Anaconda3-2022.05-Windows-x86_64.exe) and open Anaconda Navigator
 2. Install Spyder through Anaconda. If it does not work, install Spyder with the attached exe file (Spyder_64bit_full.exe)
